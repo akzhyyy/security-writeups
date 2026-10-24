@@ -143,5 +143,3 @@ I also want to learn how to document BLE observations accurately and distinguish
 - [NIST IoT Cybersecurity Guidance](https://csrc.nist.gov/pubs/ir/8259/final)
 
 ---
-
-*This document is a learning resource and does not represent a complete security assessment of any particular BLE device.*
