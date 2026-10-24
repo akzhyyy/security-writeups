@@ -28,28 +28,6 @@ The prototype incorporates the following components:
 
 The precise functions of the nRF modules depend on their models, firmware, configuration, and the way they are integrated into the prototype.
 
-## Hardware Documentation
-
-### Prototype
-
-![BLE hardware prototype](images/prototype.jpg)
-
-*Photograph of the assembled hardware prototype.*
-
-### Hardware Components
-
-![ESP32 and nRF modules](images/hardware-components.jpg)
-
-*Hardware components used in the project.*
-
-### Development Setup
-
-![Hardware development setup](images/hardware-setup.jpg)
-
-*Development environment used during the project.*
-
-Replace these example images with photographs of the actual build. If you do not have a particular photograph, remove that image section.
-
 ## Research Motivation
 
 I wanted to explore wireless security beyond theoretical concepts and develop a better understanding of how hardware and wireless communication interact.
