@@ -129,5 +129,3 @@ When using these resources:
 6. Follow applicable legal and ethical requirements.
 
 ---
-
-*This resource list will be updated as my research develops.*
