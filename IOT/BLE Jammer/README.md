@@ -1,66 +1,99 @@
+# BLE & IoT Security Research
 
-# BLE Jamming & IoT Security Research
+### Independent Research | Wireless Security | Embedded Systems | Hardware Hacking
 
-**Exploring Bluetooth Low Energy security, wireless availability risks, and the intersection of embedded systems and hardware security.**
+Exploring the security of connected devices through technical research, hardware experimentation, and continuous learning.
 
-## Overview
+---
 
-This repository documents my learning journey into Internet of Things (IoT) security, with an initial focus on Bluetooth Low Energy (BLE), wireless communication resilience, and hardware-level attack surfaces.
+## About This Repository
 
-The goal is to develop a deeper understanding of how connected devices operate, how security weaknesses emerge across hardware and software layers, and how these systems can be assessed and secured responsibly.
+Welcome to my BLE and IoT Security Research repository.
+
+This repository documents my journey into Internet of Things (IoT) security, Bluetooth Low Energy (BLE), wireless communication, embedded systems, and hardware hacking.
+
+My interest in cybersecurity extends beyond software applications and networks. I want to understand how physical devices operate, how hardware interacts with firmware, and how communication protocols influence the security of connected systems.
+
+One of my hardware projects involves building a BLE jammer. This project motivated me to explore wireless availability, radio-frequency interference, and the importance of designing resilient IoT devices.
+
+This repository serves as a technical journal for my research, observations, learning progress, and future experiments.
 
 ## Research Areas
 
-- **BLE Security:** Advertising, pairing, GATT, connection management, and security mechanisms.
-- **Wireless Availability:** Understanding radio-frequency interference, communication failures, and resilience.
-- **IoT Attack Surfaces:** Firmware, authentication, exposed interfaces, and insecure configurations.
-- **Hardware Security:** Introduction to UART, JTAG, SWD, and embedded device analysis.
-- **Defensive Engineering:** Secure firmware, robust error handling, recovery mechanisms, and secure-by-design principles.
+| Area | Focus |
+|---|---|
+| BLE Security | Bluetooth Low Energy architecture and security mechanisms |
+| Wireless Security | Wireless availability, interference, and communication resilience |
+| IoT Security | Device attack surfaces and security assessment |
+| Embedded Systems | Microcontrollers, firmware, and device architecture |
+| Hardware Hacking | Understanding hardware interfaces and embedded devices |
+| Defensive Security | Secure design, failure recovery, and resilience |
 
-## Current Research Focus
+## Featured Project: BLE Jammer
 
-### BLE Jamming and Wireless Resilience
+**Category:** Wireless Security & Hardware Experimentation
 
-BLE jamming is a wireless availability concern in which radio-frequency interference disrupts legitimate communication.
+**Project Status:** Hardware prototype developed; documentation and further research ongoing.
 
-This research examines its underlying principles, potential effects on BLE-enabled devices, and the distinction between physical-layer interference and protocol-level denial-of-service vulnerabilities.
+I built a BLE jammer as part of my exploration of wireless security and hardware hacking.
 
-The defensive focus includes:
+The project encouraged me to investigate the relationship between wireless communication, physical hardware, and the availability of connected devices.
 
-- Understanding BLE communication architecture.
-- Identifying the security implications of connectivity loss.
-- Studying device recovery and reconnection behavior.
-- Exploring approaches to improve IoT communication resilience.
-- Documenting observations from authorized, controlled research.
+My research interest extends beyond the prototype itself. I want to understand the underlying communication principles, the security implications of wireless disruption, and the defensive measures that can improve the reliability of IoT systems.
 
-**Research status:** Conceptual study and literature review. Practical experiments and results will be documented separately when performed.
+See [`ble-jammer/README.md`](ble-jammer/README.md) for the project overview.
+
+## Repository Structure
+
+- `ble-jammer/` — Hardware project overview and research notes.
+- `ble-security/` — BLE architecture and security fundamentals.
+- `iot-security/` — IoT attack surfaces and defensive observations.
+- `references/` — Technical specifications and research resources.
 
 ## Research Methodology
 
-1. Review relevant specifications and technical documentation.
-2. Study BLE architecture and security mechanisms.
-3. Identify assets, threats, and potential attack surfaces.
-4. Develop a controlled assessment methodology.
-5. Evaluate device behavior using authorized test equipment.
-6. Document observations, limitations, and defensive recommendations.
+My approach to security research focuses on:
+
+1. Understanding the underlying technology.
+2. Studying official specifications and technical documentation.
+3. Identifying relevant security risks.
+4. Formulating testable research questions.
+5. Conducting authorized, controlled assessments.
+6. Documenting observations and limitations.
+7. Identifying defensive improvements.
+
+Experimental findings will be documented separately from theoretical analysis.
+
+## Future Learning Goals
+
+- Bluetooth Low Energy protocol analysis.
+- Firmware security and reverse engineering.
+- Embedded Linux and microcontroller security.
+- Hardware debugging interfaces, including UART, JTAG, and SWD.
+- IoT authentication and secure communication.
+- Wireless resilience and recovery mechanisms.
+- Secure firmware updates and device hardening.
 
 ## Responsible Research
 
-All practical testing will be conducted only on authorized devices and within applicable legal and regulatory boundaries.
+This repository is intended for educational and defensive security research.
 
-This repository is intended for educational and defensive security research. It does not claim completed experiments or vulnerabilities unless supported by documented evidence.
+Active radio-frequency interference may affect devices beyond the intended target and may be restricted by applicable laws and regulations.
+
+Practical research will prioritize authorization, controlled environments, accurate documentation, and the safety of surrounding systems.
+
+No vulnerability or experimental result will be claimed without supporting evidence.
 
 ## References
 
 - [Bluetooth Core Specification](https://www.bluetooth.com/specifications/specs/)
-- [NISTIR 8228 — IoT Cybersecurity and Privacy Risks](https://csrc.nist.gov/pubs/ir/8228/final)
-- [NISTIR 8259 — IoT Device Cybersecurity Guidance](https://csrc.nist.gov/pubs/ir/8259/final)
+- [NIST IoT Cybersecurity Guidance](https://csrc.nist.gov/pubs/ir/8259/final)
 - [OWASP Internet of Things Project](https://owasp.org/www-project-internet-of-things/)
 
-## About This Research
 
-I am expanding my cybersecurity knowledge into IoT security, embedded systems, and hardware hacking.
 
-My long-term goal is to build practical skills in BLE analysis, firmware security, hardware interfaces, and embedded device assessment while documenting my progress through structured, responsible research.
+**Learn. Build. Investigate. Document.**
 
-**Learning. Investigating. Documenting. Improving.**
+---
+
+*This repository is a work in progress. New research notes and validated findings will be added as the project develops.*
