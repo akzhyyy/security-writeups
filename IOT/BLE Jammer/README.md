@@ -1,136 +1,111 @@
-# BLE Jammer — Hardware Security Research
+# BLE Jammer — IoT & Hardware Security Research
 
-**Project Domain:** Wireless Security | IoT Security | Hardware Hacking
+**Research Areas:** BLE Security · IoT Security · Embedded Systems · Hardware Hacking
 
-**Project Type:** Independent Hardware Experimentation
+**Hardware Platform:** ESP32 and two nRF modules
 
-**Status:** Prototype developed; further technical documentation ongoing.
+**Project Status:** Prototype developed; technical documentation and further research ongoing.
 
 ---
 
-## 1. Project Overview
+## Project Overview
 
-This project documents my experience building a BLE jammer and my interest in understanding wireless communication and the security challenges affecting connected devices.
+This project documents my independent exploration of wireless security through the development of a BLE jammer prototype using an ESP32 and two nRF modules.
 
-Bluetooth Low Energy (BLE) is widely used in smart home devices, wearables, sensors, and other IoT applications.
+My objective was to explore the relationship between embedded hardware, wireless communication, and the security challenges associated with connected devices.
 
-Although BLE provides mechanisms for efficient wireless communication and security, connectivity can still be affected by radio-frequency interference and implementation-specific weaknesses.
+The project represents an important step in my journey toward IoT security and hardware hacking. It has encouraged me to investigate wireless communication fundamentals, device architecture, and the importance of availability in connected systems.
 
-Building this prototype encouraged me to explore wireless availability as a security concern and to investigate how hardware and communication protocols interact.
+## Hardware Platform
 
-## 2. Research Motivation
+The prototype incorporates the following components:
 
-My motivation for this project was to explore wireless security beyond theoretical concepts.
-
-I wanted to develop a deeper understanding of the relationship between physical hardware, wireless communication, and the reliability of connected devices.
-
-This project represents one step in my broader journey into IoT security and hardware hacking.
-
-## 3. Technical Background
-
-BLE operates in the 2.4 GHz ISM band and uses multiple radio channels and frequency-hopping mechanisms for communication.
-
-Its security and reliability depend on several factors, including:
-
-- Radio-frequency conditions.
-- Device configuration.
-- Pairing and authentication mechanisms.
-- Firmware implementation.
-- Connection management.
-- Application-level security.
-- Recovery behavior during communication failures.
-
-A wireless availability problem does not necessarily indicate a vulnerability in BLE itself. It is important to distinguish physical-layer interference from protocol-level attacks and implementation weaknesses.
-
-## 4. Security Relevance
-
-Wireless availability is an important component of IoT security.
-
-Communication disruption can potentially lead to:
-
-- Lost or delayed sensor readings.
-- Interrupted synchronization.
-- Temporary connection failures.
-- Delayed status updates.
-- Reduced availability of wireless functionality.
-
-The impact depends on the affected device, its architecture, and its ability to operate safely without a wireless connection.
-
-Encryption and authentication protect important security properties, but they do not guarantee uninterrupted radio communication.
-
-## 5. Research Questions
-
-This project motivates several questions for further investigation:
-
-1. How does BLE communication behave under different radio conditions?
-2. How should connected devices respond to temporary connectivity loss?
-3. What recovery mechanisms help restore normal communication?
-4. How can device developers distinguish ordinary interference from other communication failures?
-5. Which architectural decisions improve IoT resilience?
-6. How should wireless availability risks be incorporated into device threat models?
-
-These questions will guide future research and defensive analysis.
-
-## 6. Technical Documentation
-
-The following project details should be recorded as they are verified:
-
-| Item | Documentation Status |
+| Component | Role in the Project |
 |---|---|
-| Hardware platform | To be documented |
-| Main components | To be documented |
-| Development environment | To be documented |
-| Prototype development | Completed |
-| Controlled test methodology | To be documented |
-| Experimental measurements | Not yet documented |
-| Defensive analysis | Ongoing |
+| ESP32 | Microcontroller platform |
+| nRF module 1 | Wireless hardware component |
+| nRF module 2 | Wireless hardware component |
 
-Only verified information should be added to these fields.
+The precise functions of the nRF modules depend on their models, firmware, configuration, and the way they are integrated into the prototype.
 
-## 7. Lessons and Learning Objectives
+## Hardware Documentation
 
-This project has strengthened my interest in:
+### Prototype
 
-- Wireless communication fundamentals.
-- BLE architecture and security.
-- Embedded hardware.
-- IoT availability and resilience.
-- Responsible security experimentation.
-- Technical research and documentation.
+![BLE hardware prototype](images/prototype.jpg)
 
-My next objective is to deepen my understanding of BLE protocols and device recovery behavior through authorized, controlled research.
+*Photograph of the assembled hardware prototype.*
 
-## 8. Future Work
+### Hardware Components
 
-Potential areas for future study include:
+![ESP32 and nRF modules](images/hardware-components.jpg)
+
+*Hardware components used in the project.*
+
+### Development Setup
+
+![Hardware development setup](images/hardware-setup.jpg)
+
+*Development environment used during the project.*
+
+Replace these example images with photographs of the actual build. If you do not have a particular photograph, remove that image section.
+
+## Research Motivation
+
+I wanted to explore wireless security beyond theoretical concepts and develop a better understanding of how hardware and wireless communication interact.
+
+Building this prototype motivated me to investigate wireless availability, communication reliability, and the security implications of connectivity disruption.
+
+It also encouraged me to look beyond the prototype itself and consider how IoT developers can design devices that respond safely to communication failures.
+
+## Security Context
+
+Bluetooth Low Energy (BLE) is widely used in wearable devices, smart home systems, sensors, and other IoT applications.
+
+Wireless communication can be affected by environmental interference, hardware limitations, configuration issues, and deliberate interference.
+
+These conditions may result in packet loss, connection instability, or reduced availability.
+
+It is important to distinguish physical-layer radio interference from protocol-level vulnerabilities and implementation weaknesses because they require different assessment and mitigation approaches.
+
+## Research Questions
+
+- How do BLE-enabled devices handle unexpected connectivity loss?
+- What factors influence wireless communication reliability?
+- How can connected devices recover safely from communication failures?
+- What security properties are provided by BLE pairing and encryption?
+- How can developers improve the resilience of connected devices?
+
+## Future Research
+
+My next learning objectives include:
 
 - BLE protocol analysis.
-- Device connectivity and recovery testing.
-- Firmware security.
-- Embedded device architecture.
-- IoT resilience assessment.
-- Secure-by-design engineering.
+- Embedded systems and microcontroller security.
+- Firmware analysis.
+- Hardware debugging interfaces.
+- IoT threat modeling.
+- Defensive wireless security.
+- Secure device recovery and resilience.
 
-## 9. Responsible Research
+## Responsible Research
 
-Radio-frequency interference can affect nearby devices and communications.
+This project is documented for educational and defensive security research.
 
-Any further active testing must be appropriately authorized, conducted under applicable regulations, and confined to suitable controlled conditions.
+Active radio-frequency interference may affect nearby devices and may be restricted by applicable regulations. Any further testing should be appropriately authorized and conducted within lawful, controlled conditions.
 
-This repository focuses on understanding wireless security risks and improving defensive resilience.
+Experimental results will be documented separately and supported by evidence.
 
-It does not claim experimental findings that have not been independently documented.
-
-## 10. References
+## References
 
 - [Bluetooth Core Specification](https://www.bluetooth.com/specifications/specs/)
 - [NIST IoT Cybersecurity Guidance](https://csrc.nist.gov/pubs/ir/8259/final)
 - [OWASP Internet of Things Project](https://owasp.org/www-project-internet-of-things/)
 
----
+## About This Project
 
-**Author's Note**
+This prototype represents part of my ongoing journey into IoT security and hardware hacking.
 
-This project represents part of my ongoing exploration of wireless security, IoT systems, and hardware hacking.
+I am interested in understanding how embedded devices operate, how wireless communication works, and how security researchers can help make connected systems more resilient.
 
-My objective is to understand the technology, document my learning process, and develop the skills required to assess and improve the security of connected devices.
+**Learn. Build. Investigate. Document.**
